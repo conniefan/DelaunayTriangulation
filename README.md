@@ -64,7 +64,7 @@ with OpenMP.
 
 HOPE TO ACHIEVE:
 
-• Apply DT to 3D mesh reconstruction and parallelize DT specific to this application setting.
+* Apply DT to 3D mesh reconstruction and parallelize DT specific to this application setting.
 
 If the project work goes slowly, only one of either goal 2 or 3 will be focused on for the final results.
 We expect our parallel implementation to present speedups over the sequential and naive parallel
