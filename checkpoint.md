@@ -21,8 +21,8 @@ Using perf, we observe that the implementation has poor spatial and temporal loc
 We profiled the execution time of the OpenMP implementation with the same workload (10 million points uniformly distributed in a square) under varying number of threads. The total execution times and the breakdown of the execution time on each component are plotted below:
 
 
-
-![Total execution time vs. number of threads](images/checkpoint/execution_time_vs_num_threads.png)
+<img src="images/checkpoint/execution_time_vs_num_threads.png" width="400" height="790">
+![Total execution time vs. number of threads](images/checkpoint/execution_time_vs_num_threads.png)  <!-- .element style="width: 500px" -->
 ![Execution time distribution vs. number of threads](images/checkpoint/execution_time_distribution.png)
 
 
