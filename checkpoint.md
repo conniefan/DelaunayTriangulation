@@ -22,7 +22,7 @@ We profiled the execution time of the OpenMP implementation with the same worklo
 
 
 
-![Total execution time vs. number of threads](images/checkpoint/execution_time_vs_num_threads.png)
+![Total execution time vs. number of threads](images/checkpoint/execution_time_vs_num_threads.png)  <!-- .element style="width: 500px" -->
 ![Execution time distribution vs. number of threads](images/checkpoint/execution_time_distribution.png)
 
 
