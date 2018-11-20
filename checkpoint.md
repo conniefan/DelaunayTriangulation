@@ -23,7 +23,7 @@ We profiled the execution time of the OpenMP implementation with the same worklo
 
 <img src="images/checkpoint/execution_time_vs_num_threads.png" width="400" height="790">
 ![Total execution time vs. number of threads](images/checkpoint/execution_time_vs_num_threads.png)  <!-- .element style="width: 500px" -->
-![Execution time distribution vs. number of threads](images/checkpoint/execution_time_distribution.png) {:height="50%" width="50%"}
+![Execution time distribution vs. number of threads](images/checkpoint/execution_time_distribution.png)
 
 
 We observe that the majority of time spent is spent on `find` and `reserveForInsert` (*reserve* as shown in the plot). As number of threads increase, time spent on `find` decreases, and time spent on `reserveForInsert` increases. This is expected since the work required to find the triangle containing the vertex decreases per thread as the number of threads increases. In `reserveForInsert`, each thread attempts to lock potentially overlapping sets of vertices using compare-and-swap, which leads to increased contention as the number of threads increases.
