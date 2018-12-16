@@ -2,7 +2,9 @@
 
 Harvey Zhang and Connie Fan
 
-In this project, we plan to implement parallelized versions of the Incremental Delaunay Triangulation algorithm. Specifically, we will begin by optimizing a shared address space implementation of DT provided in the Problem Based Benchmark Suite (PBBS) package [1]. We will then attempt to explore one of two approaches 1) a distributed implementation of the incremental DT algorithm using MPI and/or 2) a joint CPU-GPU parallelization implementation using OpenMP and CUDA with the goal of making the algorithm run as fast as possible. 
+In this project, we explored the parallelization of Delaunay Triangulation algorithms using CUDA on the GPU. Specifically, we analyzed the performance of four GPU implementations based on Voronoi diagrams. For sufficiently large input sizes, our Jump Flood GPU implementation achieves a significantly higher speedup over a single-threaded CPU Randomized Incremental implementation[1]. For an input set of 10 million points, our best implementation has a 70x speedup.
+
+[Final paper](Parallel_Delaunay_Triangulation_on_CUDA.pdf)
 
 [Checkpoint](checkpoint.md)
 
